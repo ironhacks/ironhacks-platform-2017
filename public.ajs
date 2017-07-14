@@ -1,0 +1,617 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IronHacks</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="<%= _public("/img/favicon.png") %>">
+
+        <%- Bloggify.bundles.publicHomepage.cssHtml() %>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- Add your site or application content here -->
+        <div class="wrapper">
+            <header class="header-area">
+                <!-- Menu Area
+                ============================================ -->
+                <div id="main-menu" class="sticker">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="logo float-left">
+                                    <a href="/"><img src="<%= _public("/img/logo/logo.png") %>" alt="logo" /></a>
+                                </div>
+                                <div class="main-menu float-right">
+                                    <% include("public-menu") %>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 hidden-lg hidden-md">
+                                <div class="mobile-menu">
+                                    <% include("public-menu") %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Home Area
+            ============================================ -->
+            <div id="home-area" class="height-100vh bg-oapcity-40 bg-overly bg-img-1 sm-height-none">
+                <div class="table">
+                    <div class= "table-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="home-slider clearfix">
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="top-text pt-60">
+                                            <div class="slider-text">
+                                                <h1><span class="text-weight-light">Purdue</span> IronHacks</h1>
+                                                <h2>Hack for innovation and join the open data movement.</h2>
+                                                <div class="button-set">
+                                                    <a class="button button-square scroll-down" href="#upcoming-hacks-area">
+                                                        <span>
+                                                            <span class="large-text caps">Sign up here now</span>
+                                                        </span>
+                                                    </a>
+                                                    <a class="button button-square" href="/login">
+                                                        <span>
+                                                            <span class="large-text caps">Sign in</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="slider-img">
+                                            <img src="<%= _public("/img/svg/bulb.svg") %>" alt="" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About Area
+            ============================================ -->
+            <div id="service-area">
+                <div class="pt-100 pb-120">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-sm-12 col-md-4">
+                                <div class="single-item res-sm text-center">
+                                    <div class="single-item-icon">
+                                        <i class="zmdi zmdi-settings"></i>
+                                    </div>
+                                    <h4 class="ht-pt">WHAT IS IRONHACKS?</h4>
+                                    <p>An Ironhack is a unique 21-day, 4-stage innovative hacking program for individuals who want to create impact from open data.<br>Participation is free. During the iterative hacking process, you will  learn new skills, have the chance to learn from others, and receive feedback from Ironhacks experts! Turn your ideas into web apps that make data actionable and useful!</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="single-item res-sm res-xs text-center">
+                                    <div class="single-item-icon">
+                                        <i class="zmdi zmdi-comments"></i>
+                                    </div>
+                                    <h4 class="ht-pt">WHY SHOULD I PARTICIPATE?</h4>
+                                    <p>In IronHacks, you learn new skills, win prizes ($$$), get exposed to global tech companies, and win internships. Most importantly, you become part of a global movement of open data to make an impact in areas such as safety, health, or travel.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="single-item text-center">
+                                    <div class="single-item-icon">
+                                        <i class="zmdi zmdi-accounts"></i>
+                                    </div>
+                                    <h4 class="ht-pt">HOW CAN I GET INVOLVED?</h4>
+                                    <p>There are many ways to get involved. We are always looking for open data enthusiasts, UX experts, and partners that want to help define future IronHacks challenges. Check out and sign up for our upcoming hacks. But if you don't feel quite ready to sign up, contact us and we can help you to get started.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="about-area" class="all-about gray-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-slider2 clearfix">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="about-bottom-left clearfix pt-120">
+                                    <h1>About <span>IronHacks</span></h1>
+                                    <p><strong>Innovate with open data</strong>: Create a novel and useful web app with an interactive <a href="https://techterms.com/definition/mashup">mashup</a> that combines several (at least 2) open data sets into interactive visualizations.</p>
+                                    <p><strong>Outperform and learn from others</strong>: IronHacks is a competition, but you also get expertfeedbackandlearnfromothers’work.</p>
+                                    <p><strong>Hack and learn   virtually.</strong> During the competition, you have access to an online forum where
+                                        you  can ask  questions and access all  the information,  including  your  own  scores at each
+                                        hacking round. No physical presence is needed. 3 weeks prior to the hack, we offer tutorials
+                                    on key technologies, from basics like CSS to D3.js to using the required APIs.</p>
+                                <p><strong>Gain fame</strong>: Improve your score along the way, build your reputation among other hackers,
+                                    create  a  link  with  IronHacks  sponsors,  win  cool  prizes  ($$$),  and  receive  a  certificate
+                                confirming your successful completion in the competition.</p>
+                                    <div class="about-icon">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/OpenDigitalPurdue"><i class="zmdi zmdi-facebook"></i></a></li>
+                                            <li><a href="https://twitter.com/Purdue_RCODI"><i class="zmdi zmdi-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Video Area
+            ============================================ -->
+            <div id="video" class="ptb-220 bg-img-2 overlay overlay-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <img src="<%= _public("/img/logo/2.png") %>">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% include("../register") %>
+            <div id="prizes-area" class="ptb-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="title-style title-pb4">
+                                <h1>Prizes</h1>
+                                <p>Sign up now for your chance to win great gift cards, cool swag, and internships with major sponsors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="slider-2">
+                                <div class="single-team text-center">
+                                    <div class="team-image">
+                                        <i class="zmdi zmdi-card-giftcard"></i>
+                                    </div>
+                                    <div class="team-details">
+                                        <h3>Best Solution ($500 Amazon Gift Card)</h3>
+                                        <div class="team-social fix">
+                                            <p>The best solution will be evaluated based on the submission we receive in the final round. There are  four equally weighed criteria: Technology, User Requirements, Usability, and Novelty applied. The highest aggregate score  wins.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-team text-center">
+                                    <div class="team-image">
+                                        <i class="zmdi zmdi-card-giftcard"></i>
+                                    </div>
+                                    <div class="team-details">
+                                        <h3>Winning Spirit ($250 Amazon Gift Card)</h3>
+                                        <div class="team-social fix">
+                                            <p>Those who are  among the top 25% in each of the three hacking phases qualify  for this award.
+                                            Those who meet this criteria will be ranked in terms of the number of GitHub submissions with significant changes (changes related to all categories).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-team text-center">
+                                    <div class="team-image">
+                                        <i class="zmdi zmdi-card-giftcard"></i>
+                                    </div>
+                                    <div class="team-details">
+                                        <h3>Community Spirit ($150 Amazon Gift Card)</h3>
+                                        <div class="team-social fix">
+                                            <p>Those who make  the most valuable contributions to the discussion qualify  for this award (number of posts, number of other people that find   the post useful, and expert judgment).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-team text-center">
+                                    <div class="team-image">
+                                        <i class="zmdi zmdi-card-giftcard"></i>
+                                    </div>
+                                    <div class="team-details">
+                                        <h3>Additional great opportunities</h3>
+                                        <div class="team-social fix">
+                                            <p>Additional Great Opportunities Each person will receive a signed certificate. Best Solution, Winning Spirit, and Community Spirit Winners will be invited for internship interviews by companies driving the open data movement. And most importantly, you will build your portfolio and reputation in the open data community!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rules-area" class=" ptb-120 fix">
+                <div class="container">
+                   <div class="row">
+                       <div class="col-md-12 text-center">
+                            <div class="feature-title title-style title-pb">
+                                <h1>Rules</h1>
+                                <p>Our IronHacks follow a unique 4-stage process. In order to win a prize and qualify for a certificate there are few rules and guidelines to keep in mind! We are all about openness and community-think! Be part of it.</p>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="container-fulwidth fix">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="feature-list">
+                            <div class="single-features-list normal-device">
+                                <div class="feature-list-icon">
+                                    <i class="zmdi zmdi-assignment-account"></i>
+                                </div>
+                                <div class="feature-list-text text-right">
+                                    <h3>One hack per participant</h3>
+                                    <p>To make this a fair competition, we only allow one hack per participant in the Fall of 2017.</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="single-features-list normal-device">
+                                <div class="feature-list-icon">
+                                    <i class="zmdi zmdi-file-text"></i>
+                                </div>
+                                <div class="feature-list-text text-right">
+                                    <h3>Code of conduct</h3>
+                                    <p>To qualify for the award, you need to be the originator & submitter of your app. Even though we allow you to reuse others’ code, your code should be written by yourself. Further, we follow the idea of openness and open source (you will learn more about it during the hack).</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="single-features-list mrn-nn normal-device">
+                                <div class="feature-list-icon">
+                                    <i class="zmdi zmdi-mood"></i>
+                                </div>
+                                <div class="feature-list-text text-right">
+                                    <h3>Iteration encouraged</h3>
+                                    <p>
+                                        Your first of four submissions does not have to be a shiny app. It is about getting started.  A rough working prototype is fine to start off. The feedback from experts will help you to improve.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="feature-top">
+                            <div class="feature-img">
+                                <img src="<%= _public("/img/svg/bulb.svg") %>" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="feature-list res2">
+                            <div class="single-features-list2 sfl-lsft normal-device">
+                                <div class="feature-list-icon2">
+                                    <i class="zmdi zmdi-calendar"></i>
+                                </div>
+                                <div class="feature-list-text2 res1">
+                                    <h3>Follow the process</h3>
+                                    <p>Our IronHacks follows a unique 4-stage process. In order to win a prize, there are a few rules to keep in mind.  We are all about openness and communitythink.  Be part of it!</p>
+                                </div>
+                            </div>
+                            <div class="single-features-list2 sfl-lsft normal-device">
+                                <div class="feature-list-icon2">
+                                    <i class="zmdi zmdi-puzzle-piece"></i>
+                                </div>
+                                <div class="feature-list-text2">
+                                    <h3>Technical requirements</h3>
+                                    <p>In each hack, the application should include at least 2 open data sets. Your application should be (mostly) written in JavaScript. For visualizations we ask you to use libraries like D3.js, etc.</p>
+                                </div>
+                            </div>
+                            <div class="single-features-list2 mrn-nn sfl-lsft normal-device">
+                                <div class="feature-list-icon2">
+                                    <i class="zmdi zmdi-memory"></i>
+                                </div>
+                                <div class="feature-list-text2 res1">
+                                    <h3>Evaluation in four categories</h3>
+                                    <p>Our experts judge your application in four categories: technology, user requirements, information visualization, and novelty. Stand out from the crowd.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="prior-hacks-area" class=" ptb-120 fix">
+                <div class="container">
+                   <div class="row">
+                       <div class="col-md-12 text-center">
+                            <div class="feature-title title-style title-pb">
+                                <h1>Prior Hacks</h1>
+                                <p>Check out what prior participants experienced</p>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/188211462" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/187095271" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/185403671" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="faqs-area" class="question-area ptb-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="title-style title-pb">
+                                <h1><span>FAQ’S</span> About The Purdue IronHacks</h1>
+                                <p>Still have some questions or doubts? Here you will find some answers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="faq-accordion">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel sauget-accordion">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#checkoutMethod" aria-expanded="true" aria-controls="checkoutMethod">
+                                                    Do I have to be an expert in programming?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="checkoutMethod" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <p>Purdue IronHacks has allowed people with no prior programming experience to succeed in the hack, and learn a great deal about how to turn open data into useful apps. So, it is for everybody with a willingness to come up with something cool.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel sauget-accordion">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#billingInformation" aria-expanded="false" aria-controls="billingInformation">
+                                                    Do I have to attend in person (physical presence)?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="billingInformation" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <p>No. All our training material is available via GitHub. We offer virtual meetings 3 weeks prior to the hacks. Once you have signed-up you will receive a google hangout invitation with bi-weekly meeting information. All hacking activities are online.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel sauget-accordion">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#shippingMethod" aria-expanded="false" aria-controls="shippingMethod">
+                                                    Do I have to submit in all phases?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="shippingMethod" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <p>Yes, you must submit at least one application for each of the 4 hacking phases, otherwise you will not be eligible for the award. You will also have to fill in a survey prior to the start, and another after the hack (they are short). This project is sponsored by NSF.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel sauget-accordion">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#paymentInformation" aria-expanded="false" aria-controls="paymentInformation">
+                                                    Will there be help if I have a problem?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="paymentInformation" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                            <div class="panel-body">
+                                                <p>During the hack, you have support from the community. The IronHacks forum provides immediate access to questions regarding rules and technologies to be used. Our experts will respond to questions within a few hours.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="question-img">
+                                <img src="<%= _public("/img/svg/bulb.svg") %>" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="partners-area" class="counter-area text-center ptb-120 fix">
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xs-12 counter-res">
+                    <div class="counter">
+                        <div class="icon-coun">
+                            <i class="zmdi zmdi-accounts"></i>
+                        </div>
+                        <div class="icon-text">
+                            <span class="timer">200</span>
+                            <p>IronHackers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xs-12 counter-res res-xs2">
+                    <div class="counter">
+                        <div class="icon-coun">
+                            <i class="zmdi zmdi-code"></i>
+                        </div>
+                        <div class="icon-text">
+                            <span class="timer">150</span>
+                            <p>Mashup Apps</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xs-12 res-xs3">
+                    <div class="counter">
+                        <div class="icon-coun">
+                            <i class="zmdi zmdi-file"></i>
+                        </div>
+                        <div class="icon-text">
+                            <span class="timer">100</span>
+                            <p>Datasets Used</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xs-12">
+                    <div class="counter">
+                        <div class="icon-coun">
+                            <i class="zmdi zmdi-trending-up"></i>
+                        </div>
+                        <div class="icon-text">
+                            <span class="timer">3000</span>
+                            <p>Commits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-slider-area ptb-110 gray-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="item_all indicator-style3">
+                            <div class="col-md-12 single-item2">
+                                <a href="https://www.redhat.com/en" target="_blank">
+                                    <img src="<%= _public("/images/partners/red-hat.jpg") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2">
+                                <a href="https://socrata.com/" target="_blank">
+                                    <img src="<%= _public("/images/partners/socrata.png") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2">
+                                <a href="https://github.com" target="_blank">
+                                    <img src="<%= _public("/images/partners/github.jpg") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2">
+                                <a href="http://matchboxstudio.org/" target="_blank">
+                                    <img src="<%= _public("/images/partners/match-box.png") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2">
+                                <a href="http://www.nsf.gov/" target="_blank">
+                                    <img src="<%= _public("/images/partners/nsf.jpg") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2">
+                                <a href="http://www.in.gov/isac/" target="_blank">
+                                    <img src="<%= _public("/images/partners/iac-logo.png") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2">
+                                <a href="http://purduehackers.com/" target="_blank">
+                                    <img src="<%= _public("/images/partners/purdue-hackers.jpg") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2">
+                                <a href="https://www.purdue.edu/" target="_blank">
+                                    <img src="<%= _public("/images/partners/purdue-sig-black-gold.png") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2 hide">
+                                <a href="https://polytechnic.purdue.edu/" target="_blank">
+                                    <img src="<%= _public("/images/partners/polytechnic-black-gold.png") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2">
+                                <a href="https://www.platzi.com/" target="_blank">
+                                    <img src="<%= _public("/images/partners/platzi.png") %>" />
+                                </a>
+                            </div>
+                            <div class="col-md-12 single-item2">
+                                <a href="http://unal.edu.co/" target="_blank">
+                                    <img src="<%= _public("/images/partners/universidad-nacional-de-colombia.png") %>" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-area" class="contact-area gray-bg pt-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="title-style title-pb">
+                                <h1>Get in<span> Touch</span></h1>
+                                <p>You can connect with us via phone, email, or just come to the <strong>Research Center for Open Digital Innovation</strong>, West-Lafayette, IN.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="conatct-info fix">
+                            <div class="col-md-4 col-sm-4 text-center">
+                                <div class="single-contact-info">
+                                    <div class="contact-icon">
+                                        <i class="zmdi zmdi-phone"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span>
+                                            +1 765.494.2885
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 text-center">
+                                <div class="single-contact-info res-xs2">
+                                    <div class="contact-icon">
+                                        <i class="zmdi zmdi-globe-alt"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span>
+                                            <a href="mailto:opendigital@purdue.edu">opendigital@purdue.edu</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 text-center">
+                                <div class="single-contact-info">
+                                    <div class="contact-icon">
+                                        <i class="zmdi zmdi-pin"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span>
+                                            Seng-Liang Wang Hall,<br>
+                                            516 Northwestern Ave, West Lafayette, IN 47906
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer-area pt-120 pb-80">
+                <div class="container">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-all">
+                            <div class="footer-logo">
+                            </div>
+                            <div class="footer-icon">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/OpenDigitalPurdue"><i class="zmdi zmdi-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/Purdue_RCODI"><i class="zmdi zmdi-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-text">
+                                <span>
+                                    <% include("../copyright") %>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- start scrollUp
+            ============================================ -->
+            <div id="toTop">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+        </div>
+
+        <%- Bloggify.bundles.publicHomepage.jsHtml() %>
+    </body>
+</html>

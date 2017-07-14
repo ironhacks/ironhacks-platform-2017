@@ -1,0 +1,54 @@
+<h1><a id="Purdue_Gold_Ironhacks_Spring_2017_0"></a>Purdue Gold Ironhacks Spring 2017</h1>
+<h2><a id="Problem_statement_2"></a>Problem statement:</h2>
+<p>We’re all savvy consumers and need to know when to get the cheapest vegetables and produce from local vendors. With the ever changing weather we need to know when we can get the best and cheapest produce throughout the seasons.<br>
+Imagine you are trying to figure out when and where you can get the cheapest and best local produce from local markets in West Lafayette/Lafayette and in the Greater Lafayette Area.</p>
+<h3><a id="Task_6"></a>Task:</h3>
+<ol>
+<li>Develop a website  with a mashup that combines Climate Data Online and other relevant data fro <a href="http://data.gov">data.gov</a> or <a href="http://data.indy.gov">data.indy.gov</a></li>
+<li>The website should optimize the consumers’ choice of the most cost-efficient vegetables by giving them a number of alternatives. Examples of features: “freshness scale”, price, list of vendors, integration  with Google Maps,distance, comparison of prices etc.</li>
+<li>You are also encouraged to look at other types of data to compare regular prices or somehow combine freshness and cheapness – think what would be beneficial to the consumer!</li>
+</ol>
+<h2><a id="Tech_requirements_11"></a>Tech requirements:</h2>
+<ol>
+<li>One dataset is Mandatory: Climate Data Online</li>
+<li>The application uses at least one additional dataset from <a href="http://Data.gov">Data.gov</a> or Open Indy Portal (we require you to use one of 50 datasets that we have screened for you; please check out our tutorials)</li>
+<li>The application should be written in JavaScript language</li>
+<li>The website should integrate a mashup – a web page or application created by combining data or functionality from different sources</li>
+<li>The code submission should be complemented with a README file</li>
+<li>The README file contains the following information: Keywords, brief description, a unique identifier of the author, browser within which it was tested (see our template for information)</li>
+<li>The application should use one of the visualization library (arbor.js, D3.Js, sigma.js, C3.js)</li>
+<li>The application uses the Google API</li>
+</ol>
+<h2><a id="Guidelines_21"></a>Guidelines:</h2>
+<ol>
+<li>Commit at least one new version of your app via Git in each of the 4 phases</li>
+<li>Do not work in teams as IronHacks is an individual competition</li>
+<li>You need to be the submitter of the app (Be ethical) – otherwise you will be disqualified. Follow the Purdue IronHacks Honor Code (we allow re-use but not blunt copying because then the award will go to another coder; we assume that most of the app builds upon your ideas)</li>
+<li>To qualify for an award you have to fill in a short IronHack survey at the beginning and after the hack as requested by NSF and Purdue (your data will remain anonymous)</li>
+<li>Discuss general questions on the IronHacks forum only to increase the chances to qualify for award category 3 (communication about solutions with ANY IRONHACKS participant face-to-face is AGAINST the rules)</li>
+<li>Don͛t panic: The code you submit in the first phase does NOT have to be a full working application; it can be a prototype or working solution</li>
+</ol>
+<h2><a id="Judging_Criteria_29"></a>Judging Criteria:</h2>
+<h3><a id="TECHNOLOGY_30"></a>TECHNOLOGY</h3>
+<ol>
+<li>Error rate: Major errors that prevent the application from working properly, moderate errors that impede the application from being fully functional; minor errors that are ‘cosmetic’.</li>
+<li>And minimum technology requirements.</li>
+</ol>
+<h3><a id="USER_REQUIREMENTS_33"></a>USER REQUIREMENTS</h3>
+<p>This dimensions focuses on the user group and their decision support needs e.g.</p>
+<ol>
+<li>Does the app improve the decisions of a target audience?</li>
+<li>Does it meet the minimal functional requirements presented in the challenge question?</li>
+</ol>
+<h3><a id="USABILITYINFOVIS_37"></a>USABILITY/INFOVIS</h3>
+<ol>
+<li>System affordance: Does the application offer elements that can be understood by the user?</li>
+<li>Cognitive workload: Is the number of alternative options from which the user can choose appropriate?</li>
+<li>Minimal memory: Would a potential user have to memorize a lot of information to carry out the task?</li>
+</ol>
+<h3><a id="NOVELTY_41"></a>NOVELTY</h3>
+<p>These dimensions evaluates if the app is different from other apps e.g.:</p>
+<ol>
+<li>Does the application use new datasets?</li>
+<li>Does the application implement those new dataset in a high quality way?</li>
+</ol>

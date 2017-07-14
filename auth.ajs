@@ -1,0 +1,14 @@
+<h1 class="text-center">
+    <% var hType = lien.user.profile.hack_type; %>
+    <% var hTypeName = hType.charAt(0).toUpperCase() + hType.slice(1); %>
+    <% var now = new Date() %>
+    <% var thisYear = now.getFullYear() %>
+    <% if (hType === "platzi") { %>
+        Purdue – Platzi Black IronHacks <%= thisYear %>
+    <% } else if (hType === "purdue") { %>
+        Purdue Gold IronHacks Spring <%= thisYear %>
+    <% } else if (hType === "bogota") { %>
+        Purdue – UNAL Gold IronHacks <%= thisYear %>
+    <% } %>
+</h1>
+<% include("../posts") %>

@@ -1,39 +1,54 @@
-const Topic = require("../../Topic");
-const Session = require("../../Session");
+const Bloggify = require("bloggify")
+    , csv = require("./api")
+    , moment = require("moment")
+    , Session = require("../../controllers/Session")
+    ;
 
-module.exports = (lien, cb) => {
-    const user = Session.getUser(lien);
-    if (!user) {
-        lien.setSessionData({
-            return_to: lien.pathname
+const DATE_FORMAT = "YYYY-MM-DD-hh-mm";
+
+exports.init = () => {
+    // Download topics
+    Bloggify.server.addPage("/admin/csv/topics", lien => {
+        if (!Session.isAdmin(lien)) {
+            return lien.redirect("/");
+        }
+        lien.header({
+            "Content-Disposition": `attachment; filename=${moment().format(DATE_FORMAT)}-topics.csv`,
+            "Content-Type": "text/csv"
         });
-        return lien.redirect("/login");
-    }
+        csv.topics().pipe(lien.res);
+    });
 
-    const filters = {
-        _id: lien.params.topicId
-    };
+    // Download scores
+    Bloggify.server.addPage("/admin/csv/scores", lien => {
+        if (!Session.isAdmin(lien)) {
+            return lien.redirect("/");
+        }
+        lien.header({
+            "Content-Disposition": `attachment; filename=${moment().format(DATE_FORMAT)}-scores.csv`,
+            "Content-Type": "text/csv"
+        });
+        csv.scores().pipe(lien.res);
+    });
 
-    if (!Session.isAdmin(user)) {
-        filters["metadata.hack_type"] = user.profile.hack_type;
-        filters["metadata.hack_id"] = user.profile.hack_id;
-    }
+    // Download scores
+    Bloggify.server.addPage("/admin/csv/export-users", lien => {
+        if (!Session.isAdmin(lien)) {
+            return lien.redirect("/");
+        }
 
-    Topic.get(filters, (err, topic) => {
-       if (err && err.name === "CastError") {
-           err = null;
-           topic = null;
-       }
-       if (!topic) {
-            return lien.next();
-       }
-       if (topic.slug !== lien.params.slug) {
-           return lien.redirect(Topic.getUrl(topic));
-       }
-       Topic.populate(topic.toObject()).then(topic => {
-           cb(null, {
-               topic: topic
-           });
-       }).catch(e => cb(e));
-   });
+        const hackType = lien.query.hackType
+            , hackId = lien.query.hackId
+            ;
+
+        lien.header({
+            "Content-Disposition": `attachment; filename=users-${moment().format(DATE_FORMAT)}${hackType ? "-" + hackType : ""}${hackId ? "-" + hackId : hackId}.csv`,
+            "Content-Type": "text/csv"
+        });
+
+        csv.users({
+            hackType: hackType
+          , hackId: +hackId
+        }, lien.query.exportType).pipe(lien.res);
+    });
 };

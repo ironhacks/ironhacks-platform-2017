@@ -1,0 +1,13 @@
+<nav>
+    <ul>
+        <li class="active">
+            <a href="#home-area">HOME</a>
+        </li>
+        <li><a href="#upcoming-hacks-area">Upcoming Hacks</a></li>
+        <li><a href="#prizes-area">Prizes</a></li>
+        <li><a href="#rules-area">Rules</a></li>
+        <li><a href="#prior-hacks-area">Prior Hacks</a></li>
+        <li><a href="#faqs-area">FAQs</a></li>
+        <li><a href="#partners-area">Partners</a></li>
+    </ul>
+</nav>
