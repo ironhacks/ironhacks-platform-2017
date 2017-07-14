@@ -1,0 +1,8 @@
+<% include("../../../views/user-data") %>
+<% include("../../../views/header") %>
+<% include("../../../views/container/start") %>
+<center>
+<% include("../../../views/error-box") %>
+</center>
+<% include("../../../views/container/end") %>
+<% include("../../../views/footer") %>
