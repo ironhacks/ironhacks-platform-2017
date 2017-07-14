@@ -1,0 +1,80 @@
+
+/*
+
+Template:  AppTech
+Author:bootexperts.com
+Version: 1
+Developed by: bootexperts.com
+
+NOTE: This is Style customizer stylesheet of template.
+
+*/
+
+#main-menu.stick {
+    background: #009688 none repeat scroll 0 0;
+}
+.bg-oapcity-40::before {
+    background: #009688 none repeat scroll 0 0;
+}
+.single-item:hover i {
+    background-color: #009688;
+}
+.about-icon li a i:hover {
+    color: #009688;
+}
+.single-features-list:hover .feature-list-icon i,
+.single-features-list2:hover .feature-list-icon2 i {
+    background-color: #009688;
+}
+.video-popup:hover {
+    border: 5px solid #009688;
+}
+.video-popup:hover i {
+    color: #009688;
+}
+.sauget-accordion .panel-heading h4 a {
+    background: #009688 none repeat scroll 0 0;
+}
+.slick-dots li.slick-active button {
+    border: 3px solid #009688;
+}
+.slider-2 .slick-dots li.slick-active button {
+    border: 3px solid #009688;
+}
+.single-price-package:hover .button,
+.single-price-package:hover .price,
+.single-price-package.active .button,
+.single-price-package.active .price {
+    background-color: #009688;
+}
+.counter:hover .icon-coun i {
+    background-color: #009688;
+}
+.subscribe-form form button i {
+    color: #009688;
+}
+input.submit:hover {
+    background-color: #009688;
+    border: 1px solid #009688;
+}
+.contact-from input:focus,
+.contact-from textarea:focus {
+    border-color: #009688;
+}
+.single-contact-info:hover .contact-icon {
+    border: 1px solid #009688;
+    background-color: #009688;
+}
+.footer-icon a:hover {
+    border: 1px solid #009688;
+    background-color: #009688;
+}
+.footer-text span a:hover {
+    color: #009688;
+}
+#toTop i:hover {
+    background-color: #009688;
+}
+.contact-text > span a:hover {
+  color: #009688;
+}
