@@ -1,0 +1,4 @@
+<% title = "Logout" %>
+<% include("../views/header") %>
+<% include("../views/logout") %>
+<% include("../views/footer") %>

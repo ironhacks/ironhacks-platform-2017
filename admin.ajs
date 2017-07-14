@@ -1,0 +1,18 @@
+<% include("../views/header", { title: "Admin" }) %>
+<% include("../views/container/start") %>
+
+<script>
+    window._pageData = {
+        component: "admin-view",
+        user: <%- stringify(user) %>,
+        settings: <%- stringify(settings) %>,
+        users: <%- stringify(users) %>,
+        csrfToken: <%- stringify(lien.csrfToken) %>
+    };
+</script>
+
+<h1>Admin</h1>
+<div id="app"></div>
+
+<% include("../views/container/end") %>
+<% include("../views/footer") %>

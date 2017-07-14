@@ -1,0 +1,19 @@
+<% include("../views/header", { title: title = "Ouch! Server error! " }) %>
+<% include("../views/container/start") %>
+<center>
+<% include("../views/error-box", { err: "Whoups! Something went really wrong! Contact us and let us know what you did." }) %>
+</center>
+<% var err = typeof error === "undefined" ? null : error %>
+<% if (err && !Bloggify.production) { %>
+    <pre><%= lien.method.toUpperCase() %> <%= lien.href %>
+
+<% if (lien.method !== "get") { %>
+Post data:
+<%- stringify(lien.data, null, 4) %>
+<% } %>
+
+Error stack:
+<%= err.stack %></pre>
+<% } %>
+<% include("../views/container/end") %>
+<% include("../views/footer") %>

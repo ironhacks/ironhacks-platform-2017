@@ -1,20 +1,46 @@
-<% include("../../../views/user-data") %>
-<% include("../../../views/header", { title: topic.title }) %>
-<% include("../../../views/container/start") %>
+<% if (user) { %>
+    <% include("../views/header", { title: "Home" }) %>
+    <% include("../views/container/start") %>
+    <div class="partners-list">
+        <a href="https://www.redhat.com/en" target="_blank">
+            <img src="<%= _public("/images/partners/red-hat.jpg") %>" />
+        </a>
+        <a href="https://socrata.com/" target="_blank">
+            <img src="<%= _public("/images/partners/socrata.png") %>" />
+        </a>
+        <a href="https://github.com" target="_blank">
+            <img src="<%= _public("/images/partners/github.jpg") %>" />
+        </a>
+        <a href="http://matchboxstudio.org/" target="_blank">
+            <img src="<%= _public("/images/partners/match-box.png") %>" />
+        </a>
+        <a href="http://www.nsf.gov/" target="_blank">
+            <img src="<%= _public("/images/partners/nsf.jpg") %>" />
+        </a>
+        <a href="http://www.in.gov/isac/" target="_blank">
+            <img src="<%= _public("/images/partners/iac-logo.png") %>" />
+        </a>
+        <a href="http://purduehackers.com/" target="_blank">
+            <img src="<%= _public("/images/partners/purdue-hackers.jpg") %>" />
+        </a>
+        <a href="https://www.purdue.edu/" target="_blank">
+            <img src="<%= _public("/images/partners/purdue-sig-black-gold.png") %>" />
+        </a>
+        <a href="https://polytechnic.purdue.edu/" target="_blank" class="hide">
+            <img src="<%= _public("/images/partners/polytechnic-black-gold.png") %>" />
+        </a>
+        <a href="https://www.platzi.com/" target="_blank">
+            <img src="<%= _public("/images/partners/platzi.png") %>" />
+        </a>
+        <a href="http://unal.edu.co/" target="_blank">
+            <img src="<%= _public("/images/partners/universidad-nacional-de-colombia.png") %>" />
+        </a>
+    </div>
 
-<script>
-    window._pageData = {
-        component: "topic-page",
-        user: <%- stringify(user) %>,
-        topic: <%- stringify(topic) %>,
-        csrfToken: "<%= lien.csrfToken %>",
-        isAdmin: <%- stringify(Bloggify.controllers.Session.isAdmin(user)) %>
-    };
-</script>
+    <% include("../views/homepage/auth") %>
+    <% include("../views/container/end") %>
+    <% include("../views/footer") %>
+<% } else { %>
+    <% include("../views/homepage/public") %>
+<% } %>
 
-<div id="app" class="topic-single"></div>
-
-<hr>
-
-<% include("../../../views/container/end") %>
-<% include("../../../views/footer") %>

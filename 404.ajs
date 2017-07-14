@@ -1,0 +1,7 @@
+<% include("../views/header", { title: "Page not found" }) %>
+<% include("../views/container/start") %>
+<center>
+<% include("../views/error-box", { err: "Page not found." }) %>
+</center>
+<% include("../views/container/end") %>
+<% include("../views/footer") %>
